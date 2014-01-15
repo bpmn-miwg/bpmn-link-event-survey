@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<semantic:definitions id="_1389608723301" name="Quick Survey on Link Events" targetNamespace="http://www.trisotech.com/definitions/_1389608723301" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:trisofeed="http://trisotech.com/feed" xmlns:bpsim="http://www.bpsim.org/schemas/1.0" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:semantic="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:rss="http://purl.org/rss/2.0/" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <semantic:process isExecutable="false" id="WFP-6-">
+        <semantic:startEvent name="" id="_6-2">
+            <semantic:outgoing>_6-49</semantic:outgoing>
+            <semantic:outgoing>_6-51</semantic:outgoing>
+        </semantic:startEvent>
+        <semantic:intermediateThrowEvent name="Throw A" id="_6-32">
+            <semantic:incoming>_6-49</semantic:incoming>
+            <semantic:linkEventDefinition name="Throw A"/>
+        </semantic:intermediateThrowEvent>
+        <semantic:intermediateThrowEvent name="Throw b" id="_6-15">
+            <semantic:incoming>_6-51</semantic:incoming>
+            <semantic:linkEventDefinition name="Throw b"/>
+        </semantic:intermediateThrowEvent>
+        <semantic:intermediateCatchEvent parallelMultiple="false" name="Catch A" id="_6-53">
+            <semantic:outgoing>_6-84</semantic:outgoing>
+            <semantic:linkEventDefinition name="Catch A"/>
+        </semantic:intermediateCatchEvent>
+        <semantic:endEvent name="" id="_6-70">
+            <semantic:incoming>_6-84</semantic:incoming>
+        </semantic:endEvent>
+        <semantic:startEvent name="" id="_6-86">
+            <semantic:outgoing>_6-116</semantic:outgoing>
+            <semantic:outgoing>_6-135</semantic:outgoing>
+        </semantic:startEvent>
+        <semantic:intermediateThrowEvent name="Throw B" id="_6-99">
+            <semantic:incoming>_6-116</semantic:incoming>
+            <semantic:linkEventDefinition name="Throw B"/>
+        </semantic:intermediateThrowEvent>
+        <semantic:intermediateThrowEvent name="Throw B" id="_6-118">
+            <semantic:incoming>_6-135</semantic:incoming>
+            <semantic:linkEventDefinition name="Throw B"/>
+        </semantic:intermediateThrowEvent>
+        <semantic:intermediateCatchEvent parallelMultiple="false" name="Catch B" id="_6-137">
+            <semantic:outgoing>_6-168</semantic:outgoing>
+            <semantic:linkEventDefinition name="Catch B"/>
+        </semantic:intermediateCatchEvent>
+        <semantic:endEvent name="" id="_6-154">
+            <semantic:incoming>_6-168</semantic:incoming>
+        </semantic:endEvent>
+        <semantic:sequenceFlow sourceRef="_6-2" targetRef="_6-32" name="" id="_6-49"/>
+        <semantic:sequenceFlow sourceRef="_6-2" targetRef="_6-15" name="" id="_6-51"/>
+        <semantic:sequenceFlow sourceRef="_6-53" targetRef="_6-70" name="" id="_6-84"/>
+        <semantic:sequenceFlow sourceRef="_6-86" targetRef="_6-99" name="" id="_6-116"/>
+        <semantic:sequenceFlow sourceRef="_6-86" targetRef="_6-118" name="" id="_6-135"/>
+        <semantic:sequenceFlow sourceRef="_6-137" targetRef="_6-154" name="" id="_6-168"/>
+    </semantic:process>
+    <bpmndi:BPMNDiagram documentation="" id="_6" name="Untitled Diagram" resolution="96.00000267028808">
+        <bpmndi:BPMNPlane bpmnElement="WFP-6-">
+            <bpmndi:BPMNShape bpmnElement="_6-2" id="S1389608723398__6-2">
+                <dc:Bounds height="30.0" width="30.0" x="141.0" y="336.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_6-32" id="S1389608723426__6-32">
+                <dc:Bounds height="32.0" width="32.0" x="228.0" y="268.0"/>
+                <bpmndi:BPMNLabel labelStyle="LS1389608723427">
+                    <dc:Bounds height="12.804751171875008" width="94.93333333333335" x="196.59632544533332" y="305.3333333333333"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_6-15" id="S1389608723428__6-15">
+                <dc:Bounds height="32.0" width="32.0" x="228.0" y="412.0"/>
+                <bpmndi:BPMNLabel labelStyle="LS1389608723427">
+                    <dc:Bounds height="12.804751171875008" width="94.93333333333335" x="196.59632544533332" y="449.3333333333333"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_6-53" id="S1389608723429__6-53">
+                <dc:Bounds height="32.0" width="32.0" x="308.0" y="334.0"/>
+                <bpmndi:BPMNLabel labelStyle="LS1389608723427">
+                    <dc:Bounds height="12.804751171875008" width="94.93333333333335" x="276.5963254453333" y="371.3333333333333"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_6-70" id="S1389608723430__6-70">
+                <dc:Bounds height="32.0" width="32.0" x="384.0" y="334.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_6-86" id="S1389608723431__6-86">
+                <dc:Bounds height="30.0" width="30.0" x="150.0" y="560.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_6-99" id="S1389608723432__6-99">
+                <dc:Bounds height="32.0" width="32.0" x="237.0" y="492.0"/>
+                <bpmndi:BPMNLabel labelStyle="LS1389608723427">
+                    <dc:Bounds height="12.804751171875008" width="94.93333333333335" x="205.59632544533332" y="529.3333333333333"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_6-118" id="S1389608723433__6-118">
+                <dc:Bounds height="32.0" width="32.0" x="237.0" y="636.0"/>
+                <bpmndi:BPMNLabel labelStyle="LS1389608723427">
+                    <dc:Bounds height="12.804751171875008" width="94.93333333333335" x="205.59632544533332" y="673.3333333333333"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_6-137" id="S1389608723434__6-137">
+                <dc:Bounds height="32.0" width="32.0" x="317.0" y="558.0"/>
+                <bpmndi:BPMNLabel labelStyle="LS1389608723427">
+                    <dc:Bounds height="12.804751171875008" width="94.93333333333335" x="285.5963254453333" y="595.3333333333333"/>
+                </bpmndi:BPMNLabel>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_6-154" id="S1389608723435__6-154">
+                <dc:Bounds height="32.0" width="32.0" x="393.0" y="558.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNEdge bpmnElement="_6-84" id="E1389608723437__6-84">
+                <di:waypoint x="340.0" y="350.0"/>
+                <di:waypoint x="384.0" y="350.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_6-49" id="E1389608723438__6-49">
+                <di:waypoint x="162.0" y="337.0"/>
+                <di:waypoint x="162.0" y="290.0"/>
+                <di:waypoint x="229.0" y="290.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_6-116" id="E1389608723439__6-116">
+                <di:waypoint x="171.0" y="561.0"/>
+                <di:waypoint x="171.0" y="514.0"/>
+                <di:waypoint x="238.0" y="514.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_6-168" id="E1389608723440__6-168">
+                <di:waypoint x="349.0" y="574.0"/>
+                <di:waypoint x="393.0" y="574.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_6-51" id="E1389608723441__6-51">
+                <di:waypoint x="156.0" y="366.0"/>
+                <di:waypoint x="156.0" y="421.0"/>
+                <di:waypoint x="229.0" y="422.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_6-135" id="E1389608723442__6-135">
+                <di:waypoint x="165.0" y="590.0"/>
+                <di:waypoint x="165.0" y="645.0"/>
+                <di:waypoint x="238.0" y="646.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNEdge>
+        </bpmndi:BPMNPlane>
+        <bpmndi:BPMNLabelStyle id="LS1389608723427">
+            <dc:Font isBold="false" isItalic="false" isStrikeThrough="false" isUnderline="false" name="Arial" size="8.0"/>
+        </bpmndi:BPMNLabelStyle>
+    </bpmndi:BPMNDiagram>
+</semantic:definitions>
+
